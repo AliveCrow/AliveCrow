@@ -1,0 +1,37 @@
+// 添加额外样式
+html.light {
+  --box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.075) !important;
+  --box-shadow-hover: 0px 0px 30px rgba(0, 0, 0, 0.075) !important;
+}
+
+*::selection
+  color #fff
+  background-color $accentColor
+
+
+.hero
+  height 0 !important
+
+// 修改头像
+.personal-img
+  object-fit cover
+
+// 链接个人信息中的链接居中
+.social-links
+  justify-content center
+
+// 隐藏底部
+.footer
+  display none
+
+// 文章列表样式
+.abstract-item:hover
+  .title
+    a
+      color $accentColor !important
+
+    &:after
+      visibility visible !important
+      transform scaleX(1) !important
+
+
