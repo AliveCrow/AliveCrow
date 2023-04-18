@@ -1,3 +1,4 @@
+
 module.exports = {
     title: 'console.log("刘文博")',
     head: [
@@ -13,7 +14,7 @@ module.exports = {
     },
     theme: 'reco',
     themeConfig: {
-        type: 'blog',
+        type: 'custom-home',
         sidebar: 'auto',
         subSidebar: 'auto',
         modePicker: false,
@@ -40,7 +41,20 @@ module.exports = {
             // 项目开始时间，只填写年份
             startYear: '2023'
         }
-    }
+    },
+    plugins: [
+        [
+            '@vuepress/register-components',
+            {
+                components: [
+                    {
+                        name: 'custom-home',
+                        path: '/docs/.vuepress/components/Home.vue'
+                    }
+                ]
+            }
+        ]
+    ]
     // configureWebpack: {
     //     resolve: {
     //         alias: {
