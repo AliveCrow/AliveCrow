@@ -1,4 +1,4 @@
-
+const sidebar = require('./sidebar')
 module.exports = {
     title: 'console.log("刘文博")',
     description: '记录，成为更好的自己。',
@@ -35,6 +35,7 @@ module.exports = {
         authorAvatar: '/avatar.jpg',
         search: true,
         searchMaxSuggestions: 10,
+        sidebar,
         subSidebar: 'auto',
         sidebarDepth: 4,
         lastUpdated: '上次更新',
