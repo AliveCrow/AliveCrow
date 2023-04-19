@@ -32,6 +32,7 @@ module.exports = {
                 { icon: 'reco-github', link: 'https://github.com/AliveCrow' },
             ],
         },
+        author: '刘文博',
         authorAvatar: '/avatar.jpg',
         search: true,
         searchMaxSuggestions: 10,
@@ -47,5 +48,8 @@ module.exports = {
         ['@vuepress-reco/vuepress-plugin-pagation', {
             perPage: 12
         }],
+        ['vuepress-plugin-code-copy', {
+            staticIcon:true
+        }]
     ]
 }
