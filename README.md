@@ -3,9 +3,9 @@
   一名前端工程师，擅长的技术栈包括JavaScript、Typescript、Vue、微信小程序以及Uniapp
 </h3>
 
-- 🌱 我正在学习 **React、TypeScript** - 📝 个人博客
-  [https://alivecrow.github.io/](https://alivecrow.github.io/) - 📫 邮箱
-  **liuwb-work@outlook.com**
+- 🌱 我正在学习 **React、TypeScript** 
+- 📝 个人博客 <https://alivecrow.github.io/AliveCrow/>
+- 📫 邮箱 <liuwb-work@outlook.com>
 
 <h3 align="left">技能和工具:</h3>
 <p align="left">
