@@ -1,19 +1,35 @@
 module.exports = {
-    '/JavaScript/': [
+    // '/JavaScript/': [
+    //     {
+    //         title: 'Typescript',
+    //         collapsable: true,
+    //         children: [
+    //             'date',
+    //             'dom',
+    //         ]
+    //     },
+    //     {
+    //         title: 'Typescript2',
+    //         collapsable: true,
+    //         children: [
+    //             'date',
+    //             'dom',
+    //         ]
+    //     }
+    // ]
+    '/Interview/': [
         {
-            title: 'Typescript',
+            title: 'JavaScript系列',
+            path: 'JavaScript',
             collapsable: true,
             children: [
-                'date',
-                'dom',
+                ['data_type', 'data_type'],
             ]
         },
         {
-            title: 'Typescript2',
+            title: 'Vue系列',
             collapsable: true,
             children: [
-                'date',
-                'dom',
             ]
         }
     ]
