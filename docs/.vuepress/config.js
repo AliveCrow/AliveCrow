@@ -1,5 +1,6 @@
 const sidebar = require('./sidebar')
 module.exports = {
+    base: '/AliveCrow/',
     title: 'console.log("刘文博")',
     description: '记录，成为更好的自己。',
     head: [
