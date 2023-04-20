@@ -2,6 +2,20 @@
 root {
 }
 
+@font-face{
+  font-family: 'Alimama_ShuHeiTi_Bold';
+  src: url('/Alimama_ShuHeiTi_Bold.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'DingTalk_JinBuTi_Regular';
+  src: url('/DingTalk_JinBuTi_Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Source_Han_Sans_SC_Regular';
+  src: url('/Source_Han_Sans_SC_Regular.otf') format('truetype');
+}
+
+
 html.light {
   --box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.075) !important;
   --box-shadow-hover: 0px 0px 30px rgba(0, 0, 0, 0.075) !important;
@@ -12,9 +26,13 @@ html.light>body {
   background-color: hsl(216.92 100% 97.451%, 0 0% 100% / 1) !important
 }
 
-html, body, a.sidebar-link {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+* {
+  font-family: 'Source_Han_Sans_SC_Regular', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
 }
+
+//html, body, a.sidebar-link {
+//  font-family: 'custom', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+//}
 
 // 左侧侧边栏
 .sidebar-links
