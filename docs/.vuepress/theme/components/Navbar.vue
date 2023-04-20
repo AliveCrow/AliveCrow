@@ -82,6 +82,14 @@ export default defineComponent({
 
       handleLinksWrapWidth()
       window.addEventListener('resize', handleLinksWrapWidth, false)
+        const navbar = document.querySelector('.navbar')
+      window.addEventListener('scroll', (event) => {
+          if(document.documentElement.scrollTop > 60) {
+              navbar.style.boxShadow = '0 1px 6px 0 rgba(32, 33, 36, 0.28)'
+          } else {
+              navbar.style.boxShadow = 'none'
+          }
+      })
     })
 
     return { linksWrapMaxWidth, algolia, isAlgoliaSearch, css }
@@ -90,14 +98,16 @@ export default defineComponent({
 </script>
 
 <style lang="stylus">
+$bgc = #fff
 $navbar-vertical-padding = 0.7rem
 $navbar-horizontal-padding = 1.5rem
 
 .navbar
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
-  box-shadow var(--box-shadow)
-  background var(--background-color)
+  background $bgc
+  transition all 0.15s ease-in-out
+  border-bottom: 1px solid var(--border-color)
   a, span, img
     display inline-block
   .logo
@@ -120,7 +130,7 @@ $navbar-horizontal-padding = 1.5rem
     right $navbar-horizontal-padding
     top $navbar-vertical-padding
     display flex
-    background-color var(--background-color)
+    background $bgc
     .search-box
       flex: 0 0 auto
       vertical-align top

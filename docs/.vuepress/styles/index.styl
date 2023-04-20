@@ -2,15 +2,17 @@
 root {
 }
 
-@font-face{
+@font-face {
   font-family: 'Alimama_ShuHeiTi_Bold';
   src: url('/Alimama_ShuHeiTi_Bold.ttf') format('truetype');
 }
-@font-face{
+
+@font-face {
   font-family: 'DingTalk_JinBuTi_Regular';
   src: url('/DingTalk_JinBuTi_Regular.ttf') format('truetype');
 }
-@font-face{
+
+@font-face {
   font-family: 'Source_Han_Sans_SC_Regular';
   src: url('/Source_Han_Sans_SC_Regular.otf') format('truetype');
 }
@@ -22,34 +24,37 @@ html.light {
   --border-color: #c5cbd3 !important;
   background-color: hsl(216.92 100% 97.451%, 0 0% 100% / 1) !important
 }
-html.light>body {
+
+html.light > body {
   background-color: hsl(216.92 100% 97.451%, 0 0% 100% / 1) !important
 }
 
 * {
   font-family: 'Source_Han_Sans_SC_Regular', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+  // 选中背景
+  &::selection {
+    color #fff
+    background-color $accentColor
+  }
 }
 
-//html, body, a.sidebar-link {
-//  font-family: 'custom', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
-//}
+// 隐藏主页
+.hero
+  height 0 !important
+
+// 右侧侧边栏
+.sub-sidebar
+  a.sidebar-link
+    background transparent !important
 
 // 左侧侧边栏
 .sidebar-links
   a.sidebar-link
-    background-color #fff !important
+    background #fff !important
 
   a.sidebar-link.active
     background-color var(--default-color-8) !important
 
-// 选中背景
-*::selection
-  color #fff
-  background-color $accentColor
-
-// 主页
-.hero
-  height 0 !important
 
 // 修改头像
 .personal-img
@@ -58,7 +63,6 @@ html.light>body {
 // 链接个人信息中的链接居中
 .social-links
   justify-content center
-
 
 .category-item,
 .tags > span
@@ -73,5 +77,4 @@ html.light>body {
     &:after
       visibility visible !important
       transform scaleX(1) !important
-
 

@@ -33,9 +33,9 @@ export default defineComponent({
   width 100%
   overflow: hidden;
   border-radius: $borderRadius
-  box-shadow: var(--box-shadow);
+  //box-shadow: var(--box-shadow);
   box-sizing: border-box;
-  transition all .3s
+  transition all .28s ease-in-out
   background-color var(--background-color)
   cursor: pointer;
   > * {
@@ -49,7 +49,7 @@ export default defineComponent({
     color $accentColor
     font-size 2.4rem
   &:hover
-    box-shadow: var(--box-shadow-hover)
+    box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.15);
   .title
     position: relative;
     font-size: 1.28rem;
