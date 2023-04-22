@@ -18,7 +18,7 @@ tags:
 1. 安装iTerm2
 
     ```bash
-    brew cask install iterm2
+    brew install iterm2 --cask
     ```
    
    更换iTerm2的主题
@@ -30,17 +30,17 @@ tags:
    #   iTerm2 > Preferences > Profiles > Colors Tab
    #   Open the Color Presets...
    #   从列表中选择import
-   #   选择刚才下载主题中Dracula.itermcolors 文件，确定
+   #   选择刚才下载主题中Dracula.itermcolors 文件
    ```
 
 2. 下载oh my zsh, 并切换shell为zsh
     
    ```bash
-   # 克隆oh-my-zsh到~/.oh-my-zsh目录
-    git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+   # 安装 zsh
+    wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
    
    # 切换默认shell为zsh
-    chsh -s /bin/zs 
+    chsh -s /bin/zsh
     ```
 3. 更换zsh的主题为Dracula,添加插件
 
@@ -54,11 +54,11 @@ tags:
 4. 添加插件
    
    ```bash
-   # 下载命令高亮插件 这里下载到用户名下.zsh文件夹下
-   sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
+   # 下载命令高亮插件 这里下载到用户名下.zsh文件夹下 并移动到~/.oh-my-zsh/themes/plugins 下
+   git clone https://github.com/zsh-users/zsh-syntax-highlighting
 
-   # 下载命令提示插件
-   sudo git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+   # 下载命令提示插件  并移动到~/.oh-my-zsh/themes/plugins 下
+   sudo git clone https://github.com/zsh-users/zsh-autosuggestions
    ```
 5. 修改配置文件.zshrc
    
@@ -68,16 +68,11 @@ tags:
    ZSH_THEME="dracula"
    
    plugins=(
+        git
         zsh-autosuggestions
         zsh-syntax-highlighting)
    
    source $ZSH/oh-my-zsh.sh
-   
-   # 别名
-   alias open_config="open ~/.zshrc"
-   alias save_config="source ~/.zshrc"
-   alias proxy="git config --global http.proxy http://127.0.0.1:7890 git config --global https.proxy https://127.0.0.1:7890"
-   alias noproxy="git config --global --unset http.proxy
    ```   
 
 ## 安装Node
