@@ -4,7 +4,7 @@
 </h3>
 
 - 🌱 我正在学习 **React、TypeScript** 
-- 📝 个人博客 <https://alivecrow.github.io/AliveCrow/>
+- 📝 个人博客 <https://liu-wb.com>
 - 📫 邮箱 <liuwb-work@outlook.com>
 
 <h3 align="left">技能和工具:</h3>
